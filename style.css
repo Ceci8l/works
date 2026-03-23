@@ -1,0 +1,255 @@
+/* Base Styles */
+body {
+    line-height: 1.4;
+    margin: 0;
+    color: #333;
+    background-color: #fcfcfc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Nav */
+header {
+    background: #fff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-placeholder {
+    background: #e0e0e0;
+    height: 250px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #888;
+    border-radius: 8px; 
+    
+}
+
+.image-placeholder {
+    overflow: hidden;
+}
+
+.learn-more-text,
+
+.learn-more-text:link,     /* link henüz tıklanmadıysa */
+
+.learn-more-text:visited,  /* link daha önce tıklanmışsa */
+
+.learn-more-text:hover, 
+   /* mouse üstüne gelince */
+.learn-more-text:active {  /* tıklanınca */
+    color: black;          /* hepsi siyah */
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 400;
+     /* alt çizgi yok */
+}
+
+.ooba-app-store-text {
+ font-size: 1.0rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+
+}
+
+
+.troya-website-text {
+ font-size: 1.0rem;
+ font-weight: 500;
+ color: #000;
+ line-height: 1;
+ background: #fff176; /* soft sarı marker */
+ padding: 2px 6px;   /* marker hissi için boşluk */
+ border-radius: 10px;
+
+}
+
+
+/* Ooba.html Özel Stilleri */
+.project-hero {
+    text-align: center;
+    padding: 4px 0 4px 0;
+}
+
+.main-project-image {
+ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #999;
+}
+
+.case-study {
+    max-width: 760px;
+    margin: auto;
+}
+
+.mid-content-image {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    border-radius: 12px;
+    font-style: italic;
+    color: #ccc;
+}
+
+.project-footer-nav {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    border-color: #000;
+}
+
+/* İstatistik Bölümü Stilleri */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    flex-wrap: wrap; /* Mobil uyum için */
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 300px; /* Mobilde alt alta gelmesi için */
+}
+
+.circle-stat {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-color: #d1d9f9; /* Görseldeki açık mavi/mor tonu */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Dairenin ezilmesini engeller */
+    border: 1px dotted #8e9eeb; /* Kenardaki ince nokta detayı */
+}
+
+.circle-stat .number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+}
+
+.circle-stat .percent {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+
+.stat-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #000;
+    font-weight: 500;
+    max-width: 250px;
+}
+
+/* Mobilde ortalamak için küçük bir dokunuş */
+@media (max-width: 768px) {
+    .stat-item {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #999;
+}
